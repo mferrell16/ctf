@@ -1,4 +1,3 @@
-
 import itertools
 import string
 import zlib
@@ -19,6 +18,10 @@ while True:
 	    testTry = zlib.crc32(s.encode("utf-8"))
 	    if testTry == Correct:
 	    	print("Answer found: ", s)
+	    	with open('solved.txt', 'w') as f:
+    				f.write('answer found: '+s)
 	    	exit()
 	print("Not found for length", i)
 	i = i +1 
+
+
