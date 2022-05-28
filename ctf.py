@@ -14,7 +14,7 @@ while True:
 	    p = ''.join(combination)
 	    starter = "Black Cybersecurity Association"
 	    s = starter+p
-	    print("Trying: ", s)
+	    #print("Trying: ", s)
 	    testTry = zlib.crc32(s.encode("utf-8"))
 	    if testTry == Correct:
 	    	print("Answer found: ", s)
